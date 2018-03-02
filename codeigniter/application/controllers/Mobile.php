@@ -37,7 +37,7 @@
       echo json_encode(array('success' => TRUE, 'user' => $user));
     }
 
-    public function index() {
+    public function register() {
         $data = array("fname" => ucwords($this->input->post('fname', TRUE)),
         'lname' => ucwords($this->input->post('lname', TRUE)),
         'gender' => $this->input->post('gender', TRUE),
